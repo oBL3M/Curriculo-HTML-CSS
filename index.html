@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css\style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <title>Portifólio</title>
 </head>
@@ -14,35 +17,41 @@
 <header>
   <div class="container">
     <div class="linha">
-      <figure>
-        <img src="https://pbs.twimg.com/profile_images/729099138676211712/f0D3cTZj_400x400.jpg" alt="Fulano de tal">
-        <figcaption>Fulano de tal</figcaption>
-      </figure>
-      <h1>Fulando de tal</h1>
-      <p>Programador Full-Stack</p>
+      <div class="coluna coluna-esquerda">  
+        <figure>
+          <img src="https://pbs.twimg.com/profile_images/729099138676211712/f0D3cTZj_400x400.jpg" alt="Fulano de tal">
+          <figcaption class="hidden">Fulano de tal</figcaption>
+        </figure>
+      </div>
+      <div class="coluna coluna-direita">
+        <h1>Fulando de tal</h1>
+        <p>Programador Full-Stack</p>
 
-      <ul>
-        <li>
-          <a href="mailto:contato.fulandodetal@gmail.com">contato.fulandodetal@gmail.com</a>
-        </li>
-        <li>
-          <a href="tel:5555988664422">(55) 9 8866-4422</a>
-        </li>
-        <li>
-          <a href="#">Rua dos Bobos, número 0 - Centro da periferia - Capital do interior - DF</a>
-        </li>
-      </ul>
+        <ul>
+          <li>
+            <a href="mailto:contato.fulandodetal@gmail.com">contato@fulandodetal.com</a>
+          </li>
+          <li>
+            <a href="tel:5555988664422">(55) 9 8866-4422</a>
+          </li>
+          <li>
+            <a href="#">Rua dos Bobos, nº 0 - Centro da Periferia</a>
+          </li>
+        </ul>
+      </div>
     </div>
 </header>
-      <!--BODY-->
+
+  <!--BODY-->
 <main>
     <div class="container">
       <div class="linha">
             <!--LEFT-->
          <div class="coluna coluna-esquerda">
             <section>
-              <h2>Perfil Proficional</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, nostrum exercitationem? At harum illum velit magnam quidem laboriosam. Aspernatur natus reprehenderit harum mollitia obcaecati? Cum aperiam sit iste perferendis natus.</p>
+              <h2>Perfil Profissional</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, nostrum exercitationem? At harum illum velit magnam quidem laboriosam. Aspernatur natus reprehenderit harum mollitia obcaecati? Cum aperiam sit iste perferendis natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorum suscipit necessitatibus dignissimos. Vero, ipsum. Nesciunt corrupti dolorem nam reprehenderit in necessitatibus laudantium mollitia corporis tempora repellat dolores, saepe quisquam.
+              </p>
             </section>
             <section>
               <h2>Especialização</h2>
@@ -50,10 +59,11 @@
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
-                <li>PHP / Laravel</li>
+                <li>PHP/Laravel</li>
               </ul>
             </section>
             <section>
+              <h2>Cursos</h2>
               <ul>
                 <li>HTML/CSS</li>
                 <li>Excel Avançado</li>
@@ -69,25 +79,20 @@
               <ul>
                 <li>
                   <h3>Programador Junior</h3>
-                  <strong>DevContoso</strong>
+                  <strong>-DevContoso</strong>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae magni nemo animi alias molestiae aperiam, modi perspiciatis, saepe soluta harum ipsum molestias doloribus tempora quam, neque optio a ipsam? Quam.</p>
                   <p>Jan. de 2000 - Abr. de 2005</p>
                 </li>
                 <li>
-                  <h3>Programador Pleno</h3>
-                  <strong>DevContoso</strong>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae magni nemo animi alias molestiae aperiam, modi perspiciatis, saepe soluta harum ipsum molestias doloribus tempora quam, neque optio a ipsam? Quam.</p>
-                  <p>Jan. de 2000 - Abr. de 2005</p>
-                </li>
                 <li>
                   <h3>Programador Pleno</h3>
-                  <strong>Fulano Develpments</strong>
+                  <strong>-Fulano Develpments</strong>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae magni nemo animi alias molestiae aperiam, modi perspiciatis, saepe soluta harum ipsum molestias doloribus tempora quam, neque optio a ipsam? Quam.</p>
                   <p>Jul. de 2005 - Out. de 2011</p>
                 </li>
                 <li>
                   <h3>Programador Senior</h3>
-                  <strong>BeltranoDev</strong>
+                  <strong>-BeltranoDev</strong>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae magni nemo animi alias molestiae aperiam, modi perspiciatis, saepe soluta harum ipsum molestias doloribus tempora quam, neque optio a ipsam? Quam.</p>
                   <p>Dez. de 2011 - atualmente</p>
                 </li>
@@ -119,7 +124,45 @@
   </div>
 </main>
 
-
+  <!--FOOTER-->
+<footer>
+  <div class="container">
+    <nav>
+      <ul class="socialmidia">
+        <li>
+          <a href="#">
+            <img src="img/facebook.svg" alt="Facebook">
+            <p>Facebook</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/github.svg" alt="Github">
+            <p>Github</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/instagram.svg" alt="Instagram">
+            <p>Instagram</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/linkedin.svg" alt="Linkedin">
+            <p>Linkedin</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/youtube.svg" alt="Youtube">
+            <p>Youtube</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
 
 
 </body>
