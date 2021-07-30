@@ -119,9 +119,6 @@ footer{
   background-color: var(--sc);
 }
 
-footer .container{
-padding: 20px;
-}
 
 footer nav .socialmidia{
 border-top: 1px solid var(--bgc);
@@ -138,7 +135,7 @@ padding: 30px 0 0;
 }
 
 footer nav .socialmidia li a p{
-  color: var(--bgc);
+  color: #fff;
 }
 
 footer nav .socialmidia li a img{
@@ -240,12 +237,12 @@ label span{
     transition: .02;
   }
   .ativar-dark:checked ~ .dark-mode{
+    background-color: #141414;
+  }
+  .ativar-dark:checked ~ .dark-mode{
     --mc: #221326;
     --sc: #221326;
     --bgc: #181818;
     --tmc: #fff;
     --tsc: #808080;
-  }
-  .ativar-dark:checked ~ .dark-mode{
-    background-color: #141414;
   }
